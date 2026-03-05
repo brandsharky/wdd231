@@ -100,29 +100,6 @@ header span {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*#region Main */
 main {
   display: grid;
@@ -170,10 +147,6 @@ section h2 {
 }
 
 
-
-
-
-
 .filter-buttons {
   display: flex;
   align-items: center;
@@ -193,10 +166,8 @@ section h2 {
   border-radius: 999px;
 }
 .filter-buttons button:hover {
-  background-color: var(--teal);
+  background-color: var(--blue);
 }
-
-
 
 #course-container {
   display: grid;
@@ -215,7 +186,7 @@ section h2 {
 }
 
 .course-card.completed {
-  background-color: var(--teal);
+  background-color: var(--blue);
   color: var(--white);
 }
 
@@ -227,38 +198,6 @@ section h2 {
   font-weight: bold;
 }
 /*#endregion */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
