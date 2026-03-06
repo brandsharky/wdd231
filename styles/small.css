@@ -90,10 +90,10 @@ header span {
   color: var(--white);
 }
 .navigation li.current {
-  background-color: var(--teal);
+  background-color: var(--black);
 }
 .navigation a:hover {
-  background-color: var(--teal);
+  background-color: var(--black);
 }
 /*#endregion */
 
