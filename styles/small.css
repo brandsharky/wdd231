@@ -3,7 +3,7 @@
   --gray: #b5b5b5;
   --blue: #005f73;
   --white: #fff;
-  --teal: #0a9396;
+  --teal: #006d6f;
   --orange: #ee9b00;
   --sand: #fefae0;
   --black: #0f1a20;
@@ -35,7 +35,7 @@ header {
 
   padding: 0.5rem 1rem;
 
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 2px solid var(--black);
 }
 header img {
   display: block;
@@ -79,6 +79,7 @@ header span {
   list-style-type: none;
 
   background-color: var(--blue);
+  color: var(--white);
 }
 .navigation a {
   display: block;
@@ -93,7 +94,7 @@ header span {
   background-color: var(--black);
 }
 .navigation a:hover {
-  background-color: var(--black);
+  background-color: var(--teal);
 }
 /*#endregion */
 
