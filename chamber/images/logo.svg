@@ -1,0 +1,12 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<style>
+		.s0 { fill: #0b3c5d } 
+		.s1 { fill: none;stroke: #ffffff;stroke-miterlimit:10 } 
+	</style>
+	<g id="Layer 1">
+		<path id="Background" fill-rule="evenodd" class="s0" d="m16 0v16h-16v-16z"/>
+		<path id="sun" fill-rule="evenodd" class="s1" d="m8 14c-3.32 0-6-2.68-6-6 0-3.32 2.68-6 6-6 3.32 0 6 2.68 6 6 0 3.32-2.68 6-6 6z"/>
+		<path id="horizon" fill-rule="evenodd" class="s1" d="m0 8.13h16z"/>
+		<path id="Shape 1" fill-rule="evenodd" class="s0" d="m16 8v8h-16v-8z"/>
+	</g>
+</svg>

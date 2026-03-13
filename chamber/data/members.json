@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Monaco's Pizza",
+      "address": "7325 Day Creek Blvd",
+      "phone": "(909) 463-7301",
+      "website": "https://www.monacospizza.com/",
+      "image": "monacos.gif",
+      "membership": 1
+    },
+    {
+      "name": "Red Devil Pizza",
+      "address": "1465 Foothill Blvd",
+      "phone": "(909) 593-1313",
+      "website": "https://reddevilpizza.net/",
+      "image": "reddevil.png",
+      "membership": 3
+    },
+    {
+      "name": "Jack's Surfboards",
+      "address": "2727 Newport Blvd #101",
+      "phone": " (949) 673-2300",
+      "website": "https://jackssurfboards.com/",
+      "image": "jacks.jpg",
+      "membership": 3
+    },
+    {
+      "name": "Islands Restaurants",
+      "address": "1380 Bison Ave",
+      "phone": "(949) 219-0445",
+      "website": "https://order.islandsrestaurants.com/menu/newport-beach",
+      "image": "islands.jpg",
+      "membership": 2
+    },
+    {
+      "name": "Warehouse Pizza",
+      "address": "2340 D St",
+      "phone": "(909) 593-2714",
+      "website": "http://www.warehousepizza.net/sitebuildercontent/sitebuilderfiles/warehousemenu.pdf",
+      "image": "warehouse.jpg",
+      "membership": 3
+    },
+    {
+      "name": "Dr. Alexandra Ayoub DDS",
+      "address": "1413 Foothill Blvd Ste G",
+      "phone": "(909) 593-7561",
+      "website": "https://business.lavernechamber.org/list/member/alexandra-ayoub-dds-2015.htm",
+      "image": "dds.png",
+      "membership": 2
+    },
+    {
+      "name": "LEGO Store",
+      "address": "1 Mills Cir",
+      "phone": "(909) 563-9740",
+      "website": "https://www.lego.com/en-us/stores/store/ontario-mills",
+      "image": "lego.png",
+      "membership": 3
+    }
+  ]
+}
