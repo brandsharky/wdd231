@@ -41,9 +41,11 @@ function displayMembers(companies) {
     website.target = "_blank";
     website.rel = "noopener noreferrer";
 
-    image.src = `images/${company.image}`;
+    image.src = `images/${company.image}.webp`;
     image.alt = `${company.name} logo`;
     image.loading = "lazy";
+    image.width = 175;
+    image.height = 175;
 
     card.appendChild(image);
     card.appendChild(name);

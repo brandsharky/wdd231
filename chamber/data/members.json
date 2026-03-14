@@ -5,7 +5,7 @@
       "address": "7325 Day Creek Blvd",
       "phone": "(909) 463-7301",
       "website": "https://www.monacospizza.com/",
-      "image": "monacos.gif",
+      "image": "monacos",
       "membership": 1
     },
     {
@@ -13,7 +13,7 @@
       "address": "1465 Foothill Blvd",
       "phone": "(909) 593-1313",
       "website": "https://reddevilpizza.net/",
-      "image": "reddevil.png",
+      "image": "reddevil",
       "membership": 3
     },
     {
@@ -21,7 +21,7 @@
       "address": "2727 Newport Blvd #101",
       "phone": " (949) 673-2300",
       "website": "https://jackssurfboards.com/",
-      "image": "jacks.jpg",
+      "image": "jacks",
       "membership": 3
     },
     {
@@ -29,7 +29,7 @@
       "address": "1380 Bison Ave",
       "phone": "(949) 219-0445",
       "website": "https://order.islandsrestaurants.com/menu/newport-beach",
-      "image": "islands.jpg",
+      "image": "islands",
       "membership": 2
     },
     {
@@ -37,7 +37,7 @@
       "address": "2340 D St",
       "phone": "(909) 593-2714",
       "website": "http://www.warehousepizza.net/sitebuildercontent/sitebuilderfiles/warehousemenu.pdf",
-      "image": "warehouse.jpg",
+      "image": "warehouse",
       "membership": 3
     },
     {
@@ -45,7 +45,7 @@
       "address": "3014 W Balboa Blvd",
       "phone": "(949) 723-8226",
       "website": "https://sanchostacos.com/",
-      "image": "sanchos.svg",
+      "image": "sanchos",
       "membership": 2
     },
     {
@@ -53,7 +53,7 @@
       "address": "1 Mills Cir",
       "phone": "(909) 563-9740",
       "website": "https://www.lego.com/en-us/stores/store/ontario-mills",
-      "image": "lego.png",
+      "image": "lego",
       "membership": 3
     }
   ]
