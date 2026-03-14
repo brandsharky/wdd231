@@ -43,9 +43,9 @@ function displayMembers(companies) {
 
     image.src = `images/${company.image}.webp`;
     image.alt = `${company.name} logo`;
-    image.loading = "lazy";
     image.width = 175;
     image.height = 175;
+    image.loading = "lazy";
 
     card.appendChild(image);
     card.appendChild(name);
