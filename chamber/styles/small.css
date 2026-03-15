@@ -158,6 +158,8 @@ nav ul li a:hover {
   gap: 1rem;
 }
 .grid .card {
+  position: relative;
+
   display: grid;
   gap: 1rem;
 
@@ -167,6 +169,7 @@ nav ul li a:hover {
 
   border-radius: 1rem;
   background-color: #F2E9DC;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 .grid img {
   width: 175px;
@@ -186,6 +189,22 @@ nav ul li a:hover {
 }
 .grid a:hover {
   background-color: var(--primary);
+}
+.grid .membership {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
+
+  display: grid;
+  place-items: center;
+
+  width: 2rem;
+  height: 2rem;
+
+  background-color: var(--primary);
+  color: white;
+  border-radius: 999px;
 }
 
 

@@ -31,9 +31,11 @@ function displayMembers(companies) {
     const address = document.createElement("p");
     const phone = document.createElement("p");
     const website = document.createElement("a");
+    const membership = document.createElement("p");
 
     name.textContent = company.name;
     address.textContent = company.address;
+    address.classList.add("address");
     phone.textContent = company.phone;
 
     website.textContent = "Visit Website";
@@ -47,11 +49,16 @@ function displayMembers(companies) {
     image.height = 175;
     image.loading = "lazy";
 
+    membership.classList.add("membership");
+    membership.textContent = `${company.membership}`;
+
+
     card.appendChild(image);
     card.appendChild(name);
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(website);
+    card.appendChild(membership);
 
     container.appendChild(card);
   });

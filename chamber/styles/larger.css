@@ -18,7 +18,9 @@
 
 
 
-
+  .list p:not(.membership) {
+    display: block;
+  }
 
 
 
