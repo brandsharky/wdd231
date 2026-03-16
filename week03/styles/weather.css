@@ -1,0 +1,64 @@
+:root {
+  --bg: #dff1ff;
+  --primary: #4A90E2;
+  --accent: #FFC857;
+  --text: #1F2933;
+  --card: #FFFFFF;
+}
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100dvh;
+
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+h1 {
+  padding: 2rem;
+
+  text-align: center;
+
+  background-color: var(--text);
+  color: var(--card);
+}
+
+main {
+  flex: 1;
+
+  display: grid;
+  place-items: center;
+
+  padding: 1rem;
+}
+div {
+  display: grid;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  text-align: center;
+
+  border-radius: 1rem;
+  background-color: var(--card);
+}
+span, figcaption {
+  font-weight: bold;
+}
+
+footer {
+  padding: 2rem;
+
+  text-align: center;
+
+  background-color: var(--text);
+  color: var(--card);
+}
