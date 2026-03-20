@@ -2,7 +2,6 @@
   #ham-btn {
     display: none;
   }
-
   nav {
     display: flex;
     width: auto;
@@ -18,9 +17,64 @@
 
 
 
+
+
+
+
+
+
+  /* Home */
+  .hero img {
+    max-height: 400px;
+  }
+
+  #home-main {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  #home-main section {
+    display: flex;
+    flex-direction: column;
+  }
+  .base-section > :not(h2) {
+    flex: 1;
+  }
+  .current-events {
+    flex: 1;
+  }
+
+  .spotlight .spotlight-img-container img {
+    max-width: 7rem;
+  }
+  .spotlight-text {
+    text-align: left;
+  }
+
+
+
+
+
+
+
+
+
+  /* Directory */
   .list p:not(.membership) {
     display: block;
   }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Brandon Arroyo">
-  <meta name="description" content="Chamber of Commerce directory page for Newport Beach, California by Brandon Arroyo.">
+  <meta name="description" content="Newport Beach, California Chamber of Commerce Home Page by Brandon Arroyo.">
   <link rel="icon" href="images/favicon.ico">
-  <title>Directory | Newport Beach Chamber of Commerce</title>
+  <title>Newport Beach Chamber of Commerce</title>
 
   <meta property="og:title" content="Brandon Arroyo">
-  <meta property="og:description" content="Chamber of Commerce directory page for Newport Beach, California by Brandon Arroyo for WDD 231 Chamber of Commerce project.">
+  <meta property="og:description" content="Newport Beach, California Chamber of Commerce Home Page by Brandon Arroyo for WDD 231 Chamber of Commerce project.">
   <meta property="og:image" content="https://brandsharky.github.io/wdd231/chamber/images/logo.svg">
-  <meta property="og:url" content="https://brandsharky.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://brandsharky.github.io/wdd231/chamber/index.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/index.js" defer></script>
 </head>
 <body>
   <header>
@@ -34,26 +34,67 @@
 
     <nav id="nav-bar" class="navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
-        <li><a class="current" href="directory.html">Directory</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
   </header>
 
+
   <main>
-    <h1>Our Members</h1>
+    <section class="hero">
+      <img src="images/hero.webp" alt="Newport Beach Pier" loading="lazy" width="1000" height="500">
+      <a id="cta" href="join.html">Join the Chamber</a>
+    </section>
 
-    <section id="members-container">
-      <div class="buttons">
-        <button id="gridBtn">Grid</button>
-        <button id="listBtn">List</button>
-      </div>
 
-      <div id="members" class="grid"></div>
+    <h1>Home</h1>
+
+    <div id="home-main">
+      <section class="current-events">
+        <h2>Events</h2>
+
+        <p>Nothing yet. Check back soon...</p>
+      </section>
+
+
+      <section class="weather">
+        <h2>Current Weather</h2>
+
+        <div id="weather-content">
+          <div id="weather-img">
+            <img id="weather-icon" width="" height="">
+          </div>
+
+          <div id="weather-info">
+            <p id="currentTemp"></p>
+            <p id="description"></p>
+            <p>High: <span id="high"></span></p>
+            <p>Low: <span id="low"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Sunrise: <span id="sunrise"></span></p>
+            <p>Sunset: <span id="sunset"></span></p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="forecast">
+        <h2>Forecast</h2>
+
+        <p>Today: <span id="todayTemp"></span></p>
+        <p id="tomorrowTemp"></p>
+        <p id="overmorrowTemp"></p>
+      </section>
+    </div>
+
+
+    <section id="spotlights">
     </section>
   </main>
+
 
   <footer>
     <p>
