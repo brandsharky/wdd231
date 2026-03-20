@@ -48,7 +48,6 @@ async function apiFetch() {
 
 function displayWeather(data) {
   const icons = document.createElement("img");
-  icons.id = "weather-icon";
   icons.setAttribute("src", `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}.png`);
   icons.setAttribute("alt", `${data.weather[0].description}`);
   icons.setAttribute("width", 150);
