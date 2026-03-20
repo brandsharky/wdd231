@@ -17,7 +17,7 @@ menuBtn.addEventListener("click", () => {
 
 
 //#region Weather
-const icon = document.getElementById("weather-icon");
+const iconContainer = document.getElementById("weather-img");
 const myTemp = document.getElementById("currentTemp");
 const myDescription = document.getElementById("description");
 const myHigh = document.getElementById("high");
@@ -36,7 +36,6 @@ async function apiFetch() {
     const response = await fetch(apiUrl);
     if (response.ok) {
       const data = await response.json();
-      // console.log(data);
       displayWeather(data);
     } else {
       throw Error(await response.text());
@@ -48,9 +47,14 @@ async function apiFetch() {
 
 
 function displayWeather(data) {
-  icon.setAttribute("src", `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}.png`);
-  icon.setAttribute("alt", `${data.weather[0].description}`);
-  myTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
+  const icons = document.createElement("img");
+  icons.id = "weather-icon";
+  icons.setAttribute("src", `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}.png`);
+  icons.setAttribute("alt", `${data.weather[0].description}`);
+  icons.setAttribute("width", 150);
+  icons.setAttribute("height", 150);
+  iconContainer.appendChild(icons);
+
   myDescription.innerHTML = data.weather[0].description;
   myHigh.innerHTML = `${Math.round(data.main.temp_max)}&deg;F`;
   myLow.innerHTML = `${Math.round(data.main.temp_min)}&deg;F`;
