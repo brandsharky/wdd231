@@ -44,6 +44,9 @@
     flex: 1;
   }
 
+  .spotlight .spotlight-content {
+    flex-direction: row;
+  }
   .spotlight .spotlight-img-container img {
     max-width: 7rem;
   }

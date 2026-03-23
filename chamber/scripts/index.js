@@ -141,7 +141,7 @@ function displaySpotlights(spotlights) {
 
       <div class="spotlight-content">
         <div class="spotlight-img-container">
-          <img src="images/${member.image}.webp" alt="${member.name} logo">
+          <img src="images/${member.image}.webp" alt="${member.name} logo" loading="lazy">
         </div>
 
         <div class="spotlight-text">
