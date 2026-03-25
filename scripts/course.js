@@ -81,11 +81,38 @@ function displayCourses(courseList) {
       ${course.subject} ${course.number}
     `;
 
+    card.addEventListener("click", () => {
+      displayCourseDetails(course);
+    });
+
     courseContainer.appendChild(card);
   });
 
   const totalCredits = courseList.reduce((total, course) => total + course.credits, 0);
   creditDisplay.textContent = `Total credits for courses listed above: ${totalCredits}`;
+}
+
+
+const courseDetails = document.getElementById("course-details");
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = "";
+  courseDetails.innerHTML = `
+    <div class="dialogue-content">
+      <button id="closeModal">❌</button>
+      <h2>${course.subject}${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Certificate</strong>: ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+    </div>
+  `;
+
+  courseDetails.showModal();
+
+  document.getElementById("closeModal").addEventListener("click", () => {
+    courseDetails.close();
+  })
 }
 
 

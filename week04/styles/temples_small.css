@@ -1,0 +1,50 @@
+*{box-sizing: border-box;}
+
+#showHere {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  margin: 0 auto;
+}
+
+#mydialog {
+  padding: 1rem;
+  margin: 2rem auto;
+
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+#mydialog div {
+  display: grid;
+  gap: 1rem;
+}
+#mydialog div h2 {
+  padding: 1rem;
+
+  text-align: center;
+
+  background-color: lightgray;
+  color: darkblue;
+}
+#mydialog div button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  padding: 0.25rem 0.5rem;
+
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+

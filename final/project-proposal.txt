@@ -1,0 +1,5 @@
+Final Project Proposal
+
+For my WDD231 Final Project, I will create a movie discovery website. The site will include random spotlights, a grid of movies generated from a JSON data file, a light/dark mode toggle for better user experiences, a watchlist of movies that the user would like to save, and a form that will take in the user's information and movie preferences and redisplay it to the user on another page. This form will not generate real recommendations but will redisplay the submitted data on a separate page to demonstrate form handling and user interaction.
+
+I chose this topic because finding good movies to watch can be overwhelming with the large amount of content available today. This project will allow me to build a practical and user-friendly website that organizes movie options in a simple and engaging way.
