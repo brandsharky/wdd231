@@ -46,9 +46,9 @@ a {
 button {
   cursor: pointer;
 }
-section {
-  /* border: 1px dashed red; */
-}
+/* section {
+  border: 1px dashed green;
+} */
 /*#endregion */
 
 
@@ -83,12 +83,14 @@ header {
   font-size: 1.5rem;
 
   background-color: var(--accent);
-  color: white;
+  color: var(--background);
   border: none;
   border-radius: 999px;
+
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 .hamburger:hover {
-  background-color: white;
+  background-color: var(--background);
   color: var(--text);
 }
 
@@ -116,6 +118,8 @@ nav ul li a {
 
   color: white;
   border-radius: 0.5rem;
+
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 nav ul li a.current {
   background-color: var(--accent);
@@ -124,143 +128,6 @@ nav ul li a.current {
 nav ul li a:hover {
   background-color: var(--text);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-/*#endregion */
-
-
-
-/*#region Directory */
-#members-container {
-  display: grid;
-  gap: 1rem;
-
-  padding: 1rem;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.buttons button {
-  padding: 1rem 1.5rem;
-
-  text-align: center;
-
-  border: none;
-  border-radius: 0.5rem;
-  background-color: var(--text);
-  color: white;
-}
-.buttons button:hover {
-  background-color: var(--primary);
-}
-
-#members {
-  color: var(--text);
-}
-
-
-/* GRID VIEW */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-.grid .card {
-  position: relative;
-
-  display: grid;
-  gap: 1rem;
-
-  padding: 1rem;
-
-  text-align: center;
-
-  border-radius: 1rem;
-  background-color: #F2E9DC;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.grid img {
-  width: 175px;
-  height: auto;
-
-  margin: 0 auto;
-}
-.grid a {
-  width: fit-content;
-
-  margin: 0 auto;
-  padding: 1rem 0.5rem;
-
-  background-color: #4A4A4A;
-  border-radius: 0.5rem;
-  color: white;
-}
-.grid a:hover {
-  background-color: var(--primary);
-}
-.grid .membership {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  z-index: 10;
-
-  display: grid;
-  place-items: center;
-
-  width: 2rem;
-  height: 2rem;
-
-  background-color: var(--primary);
-  color: white;
-  border-radius: 999px;
-}
-
-
-/* LIST VIEW */
-.list {
-  display: block;
-}
-.list .card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.25rem;
-
-  padding: 1rem 0.5rem;
-
-  text-align: center;
-
-  border-bottom: 1px solid var(--text);
-  color: var(--text);
-}
-.list .card:nth-child(even) {
-  background-color: white;
-}
-.list .card:nth-child(odd) {
-  background-color: var(--section);
-}
-.list h2 {
-  font-weight: bold;
-}
-
-.list img {
-  display: none;
-}
-.list p {
-  display: none;
-}
-.list a {
-  padding: 1rem 0.5rem;
-
-  background-color: var(--text);
-  color: white;
-  border-radius: 1rem;
-}
-.list a:hover {
-  background-color: var(--primary);
 }
 /*#endregion */
 
@@ -290,6 +157,8 @@ nav ul li a:hover {
   color: var(--text);
   border-radius: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 .hero #cta:hover {
   background-color: var(--accent);
@@ -432,11 +301,15 @@ nav ul li a:hover {
   text-align: center;
 }
 .spotlight-text p a {
-  text-decoration: underline;
+  font-weight: bold;
 
   color: var(--primary);
+
+  transition: color 0.5s ease, font-weight 0.5s ease;
 }
 .spotlight-text p a:hover {
+  font-weight: normal;
+
   color: var(--text)
 }
 
@@ -452,6 +325,317 @@ nav ul li a:hover {
 }
 .membership3 img {
   border: 5px solid gold;
+}
+/*#endregion */
+
+
+
+/*#region Directory */
+#members-container {
+  display: grid;
+  gap: 1rem;
+
+  padding: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.buttons button {
+  padding: 1rem 1.5rem;
+
+  text-align: center;
+
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--text);
+  color: var(--background);
+
+  transition: background-color 0.5s ease;
+}
+.buttons button:hover {
+  background-color: var(--primary);
+}
+
+#members {
+  color: var(--text);
+}
+
+
+/* GRID VIEW */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.grid .card {
+  position: relative;
+
+  display: grid;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  text-align: center;
+
+  border-radius: 1rem;
+  background-color: #F2E9DC;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.grid img {
+  width: 175px;
+  height: auto;
+
+  margin: 0 auto;
+}
+.grid a {
+  width: fit-content;
+
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+
+  background-color: #4A4A4A;
+  border-radius: 0.5rem;
+  color: var(--background);
+
+  transition: background-color 0.5s ease;
+}
+.grid a:hover {
+  background-color: var(--primary);
+}
+.grid .membership {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
+
+  display: grid;
+  place-items: center;
+
+  width: 2rem;
+  height: 2rem;
+
+  background-color: var(--primary);
+  color: white;
+  border-radius: 999px;
+}
+
+
+/* LIST VIEW */
+.list {
+  display: block;
+}
+.list .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+
+  padding: 1rem 0.5rem;
+
+  text-align: center;
+
+  border-bottom: 1px solid var(--text);
+  color: var(--text);
+}
+.list .card:nth-child(even) {
+  background-color: white;
+}
+.list .card:nth-child(odd) {
+  background-color: var(--section);
+}
+.list h2 {
+  font-weight: bold;
+}
+
+.list img {
+  display: none;
+}
+.list p {
+  display: none;
+}
+.list a {
+  padding: 1rem 0.5rem;
+
+  background-color: var(--text);
+  color: white;
+  border-radius: 1rem;
+
+  transition: background-color 0.5s ease;
+}
+.list a:hover {
+  background-color: var(--primary);
+}
+/*#endregion */
+
+
+
+/*#region Join */
+#join {
+  display: grid;
+  gap: 2rem;
+
+  padding: 4rem 2rem;
+
+  background-color: var(--section);
+}
+
+form {
+  flex: 1;
+
+  display: grid;
+  gap: 1.5rem;
+
+  width: 100%;
+
+  padding: 1.5rem;
+  margin: 0 auto;
+
+  background-color: var(--background);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: grid;
+  gap: 0.5rem;
+
+  padding: 0.25rem;
+}
+input, textarea, select {
+  width: 100%;
+
+  padding: 0.5rem 0.25rem;
+
+  border-radius: 0.5rem;
+  border: 2px solid var(--text);
+}
+input[type="submit"] {
+  padding: 1rem 0.5rem;
+
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  border-radius: 0.5rem;
+
+  transition: background-color 0.5s ease;
+}
+input[type="submit"]:hover {
+  background-color: var(--text);
+}
+
+
+#membership-level-titles {
+  flex: 1;
+
+  display: grid;
+  gap: 2rem;
+
+  width: 100%;
+}
+
+#membership-level-titles div {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 2rem;
+
+  text-align: center;
+
+  background-color: var(--background);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 2s ease forwards;
+}
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#membership-level-titles div a {
+  padding: 1rem;
+
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  color: var(--background);
+
+  transition: background-color 0.5s ease;
+}
+#membership-level-titles div a:hover {
+  background-color: var(--text);
+}
+
+dialog {
+  max-width: 600px;
+
+  margin: 4rem auto;
+
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--section);
+}
+dialog div {
+  display: grid;
+  gap: 1rem;
+
+  padding: 1rem;
+}
+dialog button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  padding: 1rem 0.5rem;
+
+  border: 2px solid var(--primary);
+  color: var(--background);
+  background-color: var(--primary);
+  border-radius: 999px;
+}
+dialog button:hover {
+  background-color: var(--background);
+  color: var(--text);
+}
+::backdrop {
+  backdrop-filter: blur(6px);
+}
+/*#endregion */
+
+
+
+/*#region Thank You */
+#thankYou {
+  display: grid;
+  gap: 1rem;
+
+  max-width: 500px;
+
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+
+  background-color: var(--section);
+  color: var(--text);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#thankYou h2 {
+  text-align: center;
+}
+#thankYou p {
+  padding: 0.5rem;
 }
 /*#endregion */
 
