@@ -1,0 +1,40 @@
+:root {
+  --background: #111111;
+  --headers: #ffffff;
+
+  --text: #b3b3b3;
+  --muted-text: #747474;
+  --button-background: #242424;
+
+  --accent1: #64b68d;
+  --accent2: #E50914;
+  --accent3: #3B82F6;
+
+}
+.lightmode {
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--text);
+  background-color: var(--background);
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--headers);
+}
+
+
+
+
+
+
+
+

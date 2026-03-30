@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Brandon Arroyo">
+  <meta name="description" content="Newport Beach, California Chamber of Commerce Discover Page by Brandon Arroyo.">
+  <link rel="icon" href="images/favicon.ico">
+  <title>Discover | Newport Beach Chamber of Commerce</title>
+
+  <meta property="og:title" content="Brandon Arroyo">
+  <meta property="og:description" content="Newport Beach, California Chamber of Commerce Discover Page by Brandon Arroyo for WDD 231 Chamber of Commerce project.">
+  <meta property="og:image" content="https://brandsharky.github.io/wdd231/chamber/images/logo.svg">
+  <meta property="og:url" content="https://brandsharky.github.io/wdd231/chamber/discover.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/discover.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="Logo for Newport Beach Chamber of Commerce">
+      <span>Newport Beach<br>Chamber of Commerce</span>
+    </div>
+
+    <button id="ham-btn" class="hamburger" aria-label="Open navigation menu">☰</button>
+
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <h1>Discover Newport Beach</h1>
+
+
+    <section id="visit_message">
+      <p id="visit-message"></p>
+    </section>
+
+
+    <section id="discover-places"></section>
+  </main>
+
+
+  <footer>
+    <p>
+      <strong>Newport Beach Chamber of Commerce</strong><br>
+      4343 Von Karman Ave Ste. 150-W<br>
+      Newport Beach, CA 92660<br>
+      info@newportbeachcc.org<br>
+      (949) 729-4400
+    </p>
+
+    <div id="footer-links">
+      <a href="https://youtube.com/@newportbeachchamberofcomme1955?si=_AdTCqAcWABlW6fR" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+      </a>
+      <a href="https://x.com/newportchamber" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/company/newport-beach-chamber-of-commerce" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+
+    <p>
+      WDD231 Class Project<br>
+      Brandon Arroyo<br>
+      &copy; <span id="currentYear"></span> Newport Beach Chamber of Commerce<br>
+      Last Modification: <span id="lastModified"></span>
+    </p>
+  </footer>
+</body>
+</html>

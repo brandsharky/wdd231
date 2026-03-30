@@ -142,6 +142,8 @@ nav ul li a:hover {
   width: 100%;
   height: auto;
   object-fit: cover;
+
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 .hero #cta {
   position: absolute;
@@ -636,6 +638,121 @@ dialog button:hover {
 }
 #thankYou p {
   padding: 0.5rem;
+}
+/*#endregion */
+
+
+
+/*#region Discover */
+#visit_message {
+  display: grid;
+  place-items: center;
+
+  margin: 0 2rem;
+  padding: 1rem;
+
+  background-color: var(--primary);
+  color: var(--background);
+  border-radius: 999px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#visit-message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+#discover-places {
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8"
+  ;
+  gap: 2rem;
+
+  padding: 4rem 2rem;
+
+  background-color: var(--section);
+}
+.place:nth-child(1) { grid-area: card1; }
+.place:nth-child(2) { grid-area: card2; }
+.place:nth-child(3) { grid-area: card3; }
+.place:nth-child(4) { grid-area: card4; }
+.place:nth-child(5) { grid-area: card5; }
+.place:nth-child(6) { grid-area: card6; }
+.place:nth-child(7) { grid-area: card7; }
+.place:nth-child(8) { grid-area: card8; }
+
+
+#discover-places .place {
+  display: grid;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  background-color: var(--background);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.place h2 {
+  padding: 1rem 2rem;
+  margin: -1rem -1rem 0 -1rem;
+
+  text-align: center;
+  font-weight: bold;
+
+  background-color: var(--accent);
+  color: var(--background);
+}
+.place .place-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.place .place-content figure {
+  margin: 0 auto;
+
+  border-radius: 0.5rem;
+}
+.place-content figure img {
+  display: block;
+
+  width: 100%;
+
+  border-radius: 0.5rem;
+
+  transition: brightness 0.5s ease, transform 0.5s ease;
+}
+.place-content .place-text {
+  display: grid;
+  gap: 1rem;
+}
+.place a {
+  display: block;
+  width: fit-content;
+
+  padding: 1rem 2rem;
+  margin: 0 auto;
+
+  text-align: center;
+  font-weight: bold;
+
+  background-color: var(--accent);
+  color: var(--background);
+  border-radius: 999px;
+
+  transition: background-color 0.5s ease;
+}
+.place a:hover {
+  background-color: var(--text);
 }
 /*#endregion */
 

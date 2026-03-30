@@ -79,7 +79,7 @@
 
 
 
-
+  /* Join  */
   #join {
     display: flex;
   }
@@ -101,9 +101,30 @@
 
 
 
+  /* Discover */
+  .place .place-content {
+    flex-direction: row;
+    align-items: center;
+  }
 
+  .place .place-content figure img {
+    min-width: 300px;
+  }
 
+  @media (min-width: 1075px) {
+    #discover-places {
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
 
+    .place img:hover {
+      filter: brightness(80%);
+      transform: scale(1.05);
+    }
+  }
 
 
 
