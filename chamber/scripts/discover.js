@@ -44,7 +44,7 @@ localStorage.setItem("lastVisit", now);
 //#region Discover Places
 const container = document.getElementById("discover-places");
 
-places.forEach((place, index) => {
+places.forEach(place => {
   const card = document.createElement("div");
   card.classList.add("place");
 
@@ -52,7 +52,7 @@ places.forEach((place, index) => {
     <h2>${place.name}</h2>
     <div class="place-content">
       <figure>
-        <img src="${place.photo}" alt="${place.name}" ${index > 1 ? 'loading="lazy"' : ""} width="300" height="200">
+        <img src="${place.photo}" alt="${place.name}" loading="lazy" width="300" height="200">
       </figure>
       <div class="place-text">
         <address>${place.address}</address>
