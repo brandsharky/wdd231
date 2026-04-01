@@ -695,6 +695,8 @@ dialog button:hover {
   display: grid;
   gap: 1rem;
 
+  min-height: 300px;
+
   padding: 1rem;
 
   background-color: var(--background);
@@ -726,6 +728,7 @@ dialog button:hover {
   display: block;
 
   width: 100%;
+  height: auto;
 
   border-radius: 0.5rem;
 
