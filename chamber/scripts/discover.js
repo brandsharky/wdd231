@@ -44,7 +44,7 @@ localStorage.setItem("lastVisit", now);
 //#region Discover Places
 const container = document.getElementById("discover-places");
 
-places.forEach(place => {
+places.forEach((place, index) => {
   const card = document.createElement("div");
   card.classList.add("place");
 
@@ -52,7 +52,7 @@ places.forEach(place => {
     <h2>${place.name}</h2>
     <div class="place-content">
       <figure>
-        <img src="${place.photo}" alt="${place.name}" loading="lazy">
+        <img src="${place.photo}" alt="${place.name}" loading="${index === 0 ? "eager" : "lazy"}" fetchpriority="${index === 0 ? "high" : "auto"}" width="300" height="200">
       </figure>
       <div class="place-text">
         <address>${place.address}</address>
@@ -61,7 +61,7 @@ places.forEach(place => {
         </p>
       </div>
     </div>
-    <a href="${place.link}" target="_blank" rel="noopener noreferrer">Learn more</a>
+    <a href="${place.link}" target="_blank" rel="noopener noreferrer">Learn more about ${place.name}</a>
   `;
 
   container.appendChild(card);
