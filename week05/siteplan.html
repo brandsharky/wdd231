@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Brandon Arroyo">
+  <meta name="description" content="SitePlan webpage for WDD231 Final Project, Cinematrix">
+  <title>Cinematrix SitePlan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <h1>Cinematrix</h1>
+  </header>
+
+
+  <main>
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p>This name <strong>Cinematrix</strong> represents uses a clear reference to movies, "Cinema" and combines it with the word "matrix" so that the user knows that this website will be focused on providing a clear yet simple database of movies. It also sounds really cool.</p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>This site aims to provide a simple hub of recommended movies in an world with an ever-growing world of movies and cinema. It allows users to explore movies and even add to a watchlist.</p>
+    </section>
+
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <p>What is a good movie in this specific genre?</p>
+      <p>What genre is this movie I want to watch?</p>
+      <p>Who directed this movie?</p>
+    </section>
+
+    <section id="color-scheme">
+      <h2>Color Scheme</h2>
+      <ul>
+        <li id="background">Background: #111111</li>
+        <li id="headers">Headers: #ffffff</li>
+        <li id="text">Text: #b3b3b3</li>
+        <li id="button-background">Footer: #242424</li>
+        <li id="accent1">Buttons: #64b68d</li>
+        <li id="accent2">Buttons: #E50914</li>
+      </ul>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <p id="inter">Inter: header, body, main, text, footer</p>
+      <p id="poppins">Poppins: h1, h2, h3, h4, h5, h6</p>
+    </section>
+
+    <section id="sitetree">
+      <h2>Site Tree</h2>
+      <img src="images/sitetree.webp" alt="website sitetree">
+    </section>
+
+    <section id="mobile">
+      <h2>Mobile Wireframe</h2>
+      <img src="images/mobile.webp" alt="Mobile Siteplan">
+    </section>
+
+    <section id="larger">
+      <h2>Larger Wireframe</h2>
+      <img src="images/larger.webp" alt="Larger Siteplan">
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Cinematrix | Created by Brandon Arroyo | Made with love for the movies</p>
+
+    <p>Last Updated: <span id="lastUpdated"></span></p>
+
+    <div id="youtube">
+      <p>Youtube Video</p>
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+    const modified = new Date(document.lastModified);
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    document.getElementById("lastUpdated").textContent = modified.toLocaleDateString("en-US", options);
+  </script>
+</body>
+</html>
