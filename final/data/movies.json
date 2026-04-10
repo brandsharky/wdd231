@@ -17,6 +17,14 @@
       "image": "toy_story"
     },
     {
+      "name": "Night at the Museum",
+      "rating": "PG",
+      "genres": ["Comedy", "Action", "Adventure", "Live-Action", "Adelaide's Picks"],
+      "released": "2006",
+      "description": "Night at the Museum follows Larry Daley, a night guard at a natural history museum who discovers that the exhibits come to life after dark. As chaos unfolds with historical figures roaming freely, Larry must learn how to manage the madness and keep everything under control before morning. Through the experience, he gains confidence, purpose, and a new perspective on responsibility.",
+      "image": "night_at_the_museum"
+    },
+    {
       "name": "Diary of a Wimpy Kid",
       "rating": "PG",
       "genres": ["Comedy", "Live-Action"],
@@ -63,6 +71,14 @@
       "released": "2006",
       "description": "This quirky comedy follows Ignacio, a monastery cook who dreams of becoming a luchador wrestler. Despite his humble life, he secretly competes in the ring to earn money and prove himself. Along the way, he discovers confidence, purpose, and the courage to embrace who he truly is.",
       "image": "nacho_libre"
+    },
+    {
+      "name": "Mary Poppins",
+      "rating": "PG",
+      "genres": ["Live-Action", "Fantasy", "Comedy", "Adventure", "Adelaide's Picks"],
+      "released": "1964",
+      "description": "A magical family film, Mary Poppins follows a mysterious nanny who arrives to care for the Banks children and quickly transforms their everyday lives. With her unique blend of discipline, kindness, and imagination, she leads them on unforgettable adventures filled with music and wonder. Along the way, the family learns important lessons about connection, joy, and what truly matters.",
+      "image": "mary_poppins"
     },
     {
       "name": "Napoleon Dynamite",
