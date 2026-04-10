@@ -1,0 +1,41 @@
+@media only screen and (min-width: 755px) {
+  #ham-btn {
+    display: none;
+  }
+  #nav-bar {
+    display: flex;
+    width: auto;
+  }
+  #nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+
+
+  /* Home */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Footer */
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+}

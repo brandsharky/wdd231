@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" contnet="Brandon Arroyo">
+  <meta name="description" content="Suggest a movie to be added and share your preferences to help expand the Cinematrix collection.">
+  <link rel="icon" href="images/logo.svg">
+  <title>Expand | Cinematrix</title>
+
+  <meta property="og:title" content="Cinematrix">
+  <meta property="og:description" content="Submit a movie and help grow the Cinematrix collection.">
+  <meta property="og:image" content="https://brandsharky.github.io/wdd231/final/images/logo.svg">
+  <meta property="og:url" content="https://brandsharky.github.io/wdd231/final/expand.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/expand.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="Cinematrix Logo" width="100" height="100">
+      <h1>Cinematrix</h1>
+    </div>
+
+    <button id="ham-btn" class="hamburger" aria-label="Open navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+    </button>
+
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="watchlist.html">Watchlist</a></li>
+        <li><a class="current" href="expand.html">Expand</a></li>
+        <li>
+          <button id="toggleLightMode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-contrast-icon lucide-contrast"><circle cx="12" cy="12" r="10"/><path d="M12 18a6 6 0 0 0 0-12v12z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="page-introduction">
+      <h2>Share a Movie Worth Adding</h2>
+      <p>
+        Know a movie that should be included? Use this page to suggest a title and share your preferences. While submissions won’t instantly update the site, they help build a better collection and reflect what users are interested in.
+      </p>
+    </section>
+
+
+    <section id="form">
+      <form id="expansion-form" method="get" action="thankyou.html">
+        <fieldset>
+          <legend>Your Information</legend>
+
+          <div class="form-group">
+            <label>
+              First Name *
+              <input type="text" name="fname" required title="Enter first name" autocomplete="given-name">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>
+              Last Name *
+              <input type="text" name="lname" required title="Enter last name" autocomplete="family-name">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>
+              Email *
+              <input type="email" name="email" required title="Enter email address" autocomplete="email" placeholder="johndoe@email.com">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Movie Details</legend>
+
+          <div class="form-group">
+            <label>
+              Movie Title *
+              <input type="text" name="movietitle" required title="Enter movie title">
+            </label>
+          </div>
+
+
+          <div class="form-group">
+            <p>Select Genres</p>
+
+            <label><input type="checkbox" name="genres" value="Action"> Action</label>
+            <label><input type="checkbox" name="genres" value="Adventure"> Adventure</label>
+            <label><input type="checkbox" name="genres" value="Animation"> Animation</label>
+            <label><input type="checkbox" name="genres" value="Comedy"> Comedy</label>
+            <label><input type="checkbox" name="genres" value="Fantasy"> Fantasy</label>
+            <label><input type="checkbox" name="genres" value="Sci-Fi"> Sci-Fi</label>
+            <label><input type="checkbox" name="genres" value="Sports"> Sports</label>
+            <label><input type="checkbox" name="genres" value="Superhero"> Superhero</label>
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label>
+            <input type="checkbox" name="subscribe" value="yes" checked>
+            Send me movie recommendations
+          </label>
+        </fieldset>
+
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+
+        <input type="submit" value="Expand Our Collection">
+      </form>
+    </section>
+  </main>
+
+
+  <footer>
+    <div id="footer-text">
+      <p>&copy; <span id="currentYear"></span> Cinematrix | Created by <span>Brandon Arroyo</span> | Made with <span>love</span> for the movies</p>
+
+      <a href="mailto:barroyo@byupathway.edu">Contact Me</a>
+
+      <p>Last Updated: <span id="lastUpdated"></span></p>
+    </div>
+
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="watchlist.html">Watchlist</a></li>
+        <li><a class="current-footer-nav" href="expand.html">Expand</a></li>
+      </ul>
+    </nav>
+
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/D2B70dz1F68?si=JKRKC8xK57194nuW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </footer>
+</body>
+</html>

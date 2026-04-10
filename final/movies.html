@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" contnet="Brandon Arroyo">
-  <meta name="description" content="Discover new movies, explore detailed information, and build your personal watchlist with Cinematrix.">
+  <meta name="description" content="Browse a collection of movies with ratings, genres, and details to help you find something worth watching.">
   <link rel="icon" href="images/logo.svg">
-  <title>Home | Cinematrix</title>
+  <title>Movies | Cinematrix</title>
 
   <meta property="og:title" content="Cinematrix">
-  <meta property="og:description" content="Discover new movies and build your personal watchlist with Cinematrix.">
+  <meta property="og:description" content="Explore movies with ratings, genres, and details to find your next watch.">
   <meta property="og:image" content="https://brandsharky.github.io/wdd231/final/images/logo.svg">
-  <meta property="og:url" content="https://brandsharky.github.io/wdd231/final/index.html">
+  <meta property="og:url" content="https://brandsharky.github.io/wdd231/final/movies.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
 
-  <script type="module" src="scripts/index.js" defer></script>
+  <script type="module" src="scripts/movies.js" defer></script>
 </head>
 <body>
   <header>
@@ -36,8 +36,8 @@
 
     <nav id="nav-bar" class="navigation">
       <ul>
-        <li><a class="current" href="index.html">Home</a></li>
-        <li><a href="movies.html">Movies</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="movies.html">Movies</a></li>
         <li><a href="watchlist.html">Watchlist</a></li>
         <li><a href="expand.html">Expand</a></li>
         <li>
@@ -52,22 +52,30 @@
 
   <main>
     <section class="page-introduction">
-      <h2>Discover Your Next Favorite Movie</h2>
+      <h2>Explore Movies Worth Watching</h2>
       <p>
-        Welcome to <span>Cinematrix</span>, a place to explore movies without any of the modern-day clutter. Whether you're looking for something <span>new</span> or revisiting a <span>classic</span>, this site helps you quickly find <span>family-friendly</span> movies worth your time. <span>Browse</span> through selections, <span>explore</span> and discover, and <span>save</span> your own list of movies you love.
+        Browse a collection of films and discover what stands out to you. Each movie includes key details like genre, rating, and release year, with the option to view more information. Use this page to explore different options and find something that fits your mood.
       </p>
     </section>
 
-    <section id="home-links">
-      <a href="movies.html">Explore Movies</a>
-      <a href="watchlist.html">View Watchlist</a>
-      <a href="expand.html">Submit Movie</a>
+
+    <section id="movie-filters" class="filter-movies">
+      <button id="movies-all">All</button>
+      <button id="movies-action">Action</button>
+      <button id="movies-adventure">Adventure</button>
+      <button id="movies-animation">Animation</button>
+      <button id="movies-comedy">Comedy</button>
+      <button id="movies-fantasy">Fantasy</button>
+      <button id="movies-scifi">Sci-Fi</button>
+      <button id="movies-sports">Sports</button>
+      <button id="movies-superhero">Superhero</button>
+      <button id="movies-live-action">Live-Action</button>
+      <button id="movies-adelaides-picks">Adelaide's Picks</button>
     </section>
 
-    <section id="featured">
-      <h2>Featured Movies</h2>
 
-      <div id="featured-movies"></div>
+    <section id="movies-grid" class="movie-grid">
+
     </section>
   </main>
 
@@ -83,8 +91,8 @@
 
     <nav class="footer-nav">
       <ul>
-        <li><a class="current-footer-nav" href="index.html">Home</a></li>
-        <li><a href="movies.html">Movies</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current-footer-nav" href="movies.html">Movies</a></li>
         <li><a href="watchlist.html">Watchlist</a></li>
         <li><a href="expand.html">Expand</a></li>
       </ul>

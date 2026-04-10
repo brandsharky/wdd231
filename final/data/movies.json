@@ -1,0 +1,148 @@
+{
+  "movies": [
+    {
+      "name": "Tron: Legacy",
+      "rating": "PG",
+      "genres": ["Sci-Fi", "Action", "Adventure", "Live-Action"],
+      "released": "2010",
+      "description": "A visually striking sci-fi adventure, Tron: Legacy follows Sam Flynn as he is pulled into a digital world created by his missing father. Inside the Grid, he encounters dangerous programs, high-speed light cycle battles, and a powerful ruler seeking control. As Sam uncovers the truth about his father’s past, he must fight to escape while restoring balance to the system.",
+      "image": "tron_legacy"
+    },
+    {
+      "name": "Toy Story",
+      "rating": "PG",
+      "genres": ["Adventure", "Comedy", "Animation"],
+      "released": "1995",
+      "description": "Toy Story tells the story of a group of toys that come to life when humans aren’t around, led by the loyal cowboy Woody. Their world is shaken when Buzz Lightyear, a flashy new space ranger, arrives and quickly becomes their owner’s favorite. What begins as a rivalry turns into an unexpected friendship as the two must work together to find their way home.",
+      "image": "toy_story"
+    },
+    {
+      "name": "Diary of a Wimpy Kid",
+      "rating": "PG",
+      "genres": ["Comedy", "Live-Action"],
+      "released": "2010",
+      "description": "This comedy follows middle schooler Greg Heffley as he tries to navigate the awkward challenges of growing up. Through his diary entries, Greg shares his attempts to become popular, avoid embarrassment, and deal with his best friend Rowley. Along the way, he learns that being yourself might be more important than fitting in.",
+      "image": "wimpy_kid"
+    },
+    {
+      "name": "The Lego Movie",
+      "rating": "PG",
+      "genres": ["Animation", "Comedy", "Adventure", "Superhero"],
+      "released": "2014",
+      "description": "In a world made entirely of LEGO bricks, an ordinary construction worker named Emmet is mistaken for the “Special” destined to save everything. Thrown into a wild adventure with a group of unlikely heroes, he must stop an evil tyrant from freezing the world in place. It’s a fast-paced, funny story about creativity, individuality, and believing in yourself.",
+      "image": "lego_movie"
+    },
+    {
+      "name": "The Lego Batman Movie",
+      "rating": "PG",
+      "genres": ["Animation", "Action", "Adventure", "Comedy", "Superhero"],
+      "released": "2017",
+      "description": "This playful spin-off focuses on Batman’s life in Gotham, where he secretly struggles with loneliness despite his tough exterior. When a new villain threatens the city, Batman must learn to work with others, including Robin and Batgirl. Packed with humor and action, the film shows that even heroes need family and teamwork.",
+      "image": "lego_batman_movie"
+    },
+    {
+      "name": "The Emperor's New Groove",
+      "rating": "PG",
+      "genres": ["Animation", "Adventure", "Comedy", "Adelaide's Picks"],
+      "released": "2000",
+      "description": "A fast-paced comedy, The Emperor’s New Groove follows Kuzco, a self-centered emperor who is transformed into a llama after a failed plot against him. Stranded far from home, he reluctantly teams up with a kind-hearted villager named Pacha to return to the palace. Along the way, Kuzco learns about friendship, humility, and what it really means to be a good leader.",
+      "image": "emperor"
+    },
+    {
+      "name": "Transformers One",
+      "rating": "PG",
+      "genres": ["Animation", "Sci-Fi", "Action", "Adventure", "Comedy"],
+      "released": "2024",
+      "description": "Set on Cybertron before the Autobots and Decepticons became enemies, Transformers One explores the origins of Optimus Prime and Megatron. The story follows their early friendship and the events that drive them apart. With action, humor, and emotional depth, it reveals how two allies became legendary rivals.",
+      "image": "transformers_one"
+    },
+    {
+      "name": "Nacho Libre",
+      "rating": "PG",
+      "genres": ["Comedy", "Action", "Sports", "Live-Action"],
+      "released": "2006",
+      "description": "This quirky comedy follows Ignacio, a monastery cook who dreams of becoming a luchador wrestler. Despite his humble life, he secretly competes in the ring to earn money and prove himself. Along the way, he discovers confidence, purpose, and the courage to embrace who he truly is.",
+      "image": "nacho_libre"
+    },
+    {
+      "name": "Napoleon Dynamite",
+      "rating": "PG",
+      "genres": ["Comedy", "Live-Action"],
+      "released": "2004",
+      "description": "Set in a small town, Napoleon Dynamite centers on an awkward teenager navigating high school life with his own unique style. Alongside his friend Pedro, he faces strange situations and offbeat characters. The film’s humor comes from its dry delivery and memorable, unconventional moments.",
+      "image": "napoleon_dynamite"
+    },
+    {
+      "name": "Kicking and Screaming",
+      "rating": "PG",
+      "genres": ["Comedy", "Sports", "Live-Action"],
+      "released": "2005",
+      "description": "This sports comedy follows Phil Weston, a mild-mannered dad who becomes overly competitive when coaching his son’s soccer team. As he tries to beat his hyper-competitive father, Phil transforms in unexpected ways. The film balances humor with a message about teamwork, family, and keeping competition in perspective.",
+      "image": "kicking_and_screaming"
+    },
+    {
+      "name": "Surfs Up",
+      "rating": "PG",
+      "genres": ["Animation", "Sports", "Comedy", "Adventure"],
+      "released": "2007",
+      "description": "Presented as a mockumentary, Surf’s Up follows Cody Maverick, a young penguin with dreams of becoming a surfing champion. He travels to a big competition where he meets new friends and a laid-back mentor. Through the experience, Cody learns that passion matters more than winning.",
+      "image": "surfs_up"
+    },
+    {
+      "name": "Kung Fu Panda",
+      "rating": "PG",
+      "genres": ["Animation", "Action", "Adventure", "Sports", "Comedy", "Adelaide's Picks"],
+      "released": "2008",
+      "description": "Kung Fu Panda tells the story of Po, an enthusiastic but unlikely hero who dreams of becoming a kung fu master. When he is unexpectedly chosen as the Dragon Warrior, he must train alongside skilled fighters while overcoming self-doubt. With determination and heart, Po learns that believing in himself is the key to unlocking his true potential.",
+      "image": "kung_fu_panda"
+    },
+    {
+      "name": "Bedtime Stories",
+      "rating": "PG",
+      "genres": ["Comedy", "Fantasy", "Action", "Adventure", "Live-Action"],
+      "released": "2008",
+      "description": "This fantasy comedy follows Skeeter, a hotel handyman whose life changes when the bedtime stories he tells his niece and nephew start coming true. As he tries to control the outcomes, chaos and adventure unfold in the real world. It’s a fun mix of imagination and reality with plenty of unexpected twists.",
+      "image": "bedtime_stories"
+    },
+    {
+      "name": "The Super Mario Bros. Movie",
+      "rating": "PG",
+      "genres": ["Animation", "Action", "Adventure", "Comedy", "Fantasy"],
+      "released": "2023",
+      "description": "This colorful adventure brings Mario and Luigi into the Mushroom Kingdom, where they must stop Bowser’s plan for domination. Along the way, Mario teams up with Princess Peach and other familiar faces to save the day. The film is packed with action, humor, and nods to the classic video games.",
+      "image": "super_mario_bros"
+    },
+    {
+      "name": "Star Wars: A New Hope",
+      "rating": "PG",
+      "genres": ["Sci-Fi", "Action", "Adventure", "Fantasy", "Live-Action"],
+      "released": "1977",
+      "description": "In a galaxy far, far away, Luke Skywalker joins forces with a group of rebels to fight against the oppressive Empire. Guided by Obi-Wan Kenobi, he begins to discover the power of the Force. The journey leads to a daring mission to destroy the Death Star and spark hope across the galaxy.",
+      "image": "star_wars"
+    },
+    {
+      "name": "How To Train Your Dragon",
+      "rating": "PG",
+      "genres": ["Animation", "Action", "Adventure", "Fantasy", "Adelaide's Picks"],
+      "released": "2010",
+      "description": "Set in a Viking village where dragons are seen as enemies, How to Train Your Dragon follows Hiccup, a young inventor who doesn’t fit the warrior mold. When he befriends an injured dragon named Toothless, he begins to question everything his people believe about dragons. Their unlikely friendship changes both their worlds, leading to a new understanding between humans and dragons.",
+      "image": "httyd"
+    },
+    {
+      "name": "Alexander and the Terrible, Horrible, No Good, Very Bad Day",
+      "rating": "PG",
+      "genres": ["Comedy", "Adventure", "Live-Action"],
+      "released": "2014",
+      "description": "This family comedy follows Alexander, a kid who feels like everything always goes wrong for him. When his entire family experiences a series of disasters in one day, they begin to understand his frustrations. Through the chaos, they learn to stick together and find humor in tough situations.",
+      "image": "alexander"
+    },
+    {
+      "name": "The Princess Bride",
+      "rating": "PG",
+      "genres": ["Fantasy", "Action", "Adventure", "Comedy", "Live-Action"],
+      "released": "1987",
+      "description": "A timeless fantasy adventure, The Princess Bride tells the story of true love between Westley and Princess Buttercup. Their journey is filled with sword fights, clever battles of wit, and memorable characters. Blending romance, comedy, and action, it’s a charming tale about love and perseverance.",
+      "image": "princess_bride"
+    }
+  ]
+}
