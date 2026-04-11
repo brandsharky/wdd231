@@ -95,6 +95,7 @@ export function displayMovies(moviesList, containerId) {
 
 
     const watchBtn = document.createElement("button");
+    watchBtn.setAttribute("aria-label", "Toggle Movie to Watchlist");
     watchBtn.classList.add("watchlistToggle");
     if (isSaved) {
       watchBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg>`;

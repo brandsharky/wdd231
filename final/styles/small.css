@@ -440,6 +440,7 @@ header {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: var(--card-shadow);
+  border: 2px solid var(--headers);
 }
 .movie-card .rating {
   position: absolute;
@@ -888,7 +889,7 @@ footer iframe {
 
   margin: 0 auto;
 
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 /*#endregion */
 
