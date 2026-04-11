@@ -1,17 +1,20 @@
+/*#region Site Wide */
 :root {
   --background: #111111;
   --headers: #ffffff;
 
-  --text: #b3b3b3;
-  --text-bg: #b3b3b31a;
+  --text: #ffffff;
+  --text-bg: #2a2a2a;
   --button-background: #242424;
 
   --accent1: #64b68d;
-  --accent1-bg: #64b68d1a;
-  --accent2: #e4464e;
-  --accent2-bg: #e4464d1a;
+  --accent1-bg: #1f3d33;
+
+  --accent2: #ff5a61;
+  --accent2-bg: #3a1f22;
+
   --accent3: #3B82F6;
-  --accent3-bg: #3b82f61a;
+  --accent3-bg: #1f2f4d;
 
   --card-shadow: 0 1px 3px rgba(255, 255, 255, 0.04), 0 6px 16px rgba(0, 0, 0, 0.85);
 }
@@ -19,16 +22,21 @@
   --background: #f5f5f5;
   --headers: #111111;
 
-  --text: #555555;
-  --text-bg: #55555540;
-  --button-background: #c7c7c7;
+  --text: black;
+  --text-bg: #c6c6c6;
+  --button-background: #d6d6d6;
 
-  --accent1-bg: #64b68d40;
+  --accent1: #4f9e77;
+  --accent1-bg: #d7efe5;
 
-  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 12px 32px rgba(0, 0, 0, 0.12);;
+  --accent2: #d6454d;
+  --accent2-bg: #f8d7da;
+
+  --accent3: #2563eb;
+  --accent3-bg: #dbeafe;
+
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 6px 16px rgba(0, 0, 0, 0.12);
 }
-
-
 * {
   margin: 0;
   padding: 0;
@@ -70,9 +78,7 @@ main {
 
   padding: 1rem;
 }
-section {
-  /* border: 1px solid red; */
-}
+/*#endregion */
 
 
 
@@ -184,7 +190,6 @@ header {
   line-height: 0;
 
   border-radius: 999px;
-  border: none;
   color: var(--text);
   background-color: var(--button-background);
   border: 2px solid transparent;
@@ -235,6 +240,8 @@ header {
 
 .page-introduction p {
   font-size: 1.1rem;
+
+  color: white;
 }
 .page-introduction p span {
   font-weight: bold;
@@ -686,7 +693,6 @@ form fieldset {
   padding: 0.5rem;
 
   border: 2px solid var(--text);
-  border-radius: 1rem;
   border-radius: 1rem;
 }
 form legend {
