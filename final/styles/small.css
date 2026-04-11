@@ -890,6 +890,7 @@ footer iframe {
   margin: 0 auto;
 
   border-radius: 1rem;
+  border: 0;
 }
 /*#endregion */
 
