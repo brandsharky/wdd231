@@ -440,7 +440,6 @@ header {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: var(--card-shadow);
-  border: 2px solid var(--headers);
 }
 .movie-card .rating {
   position: absolute;
