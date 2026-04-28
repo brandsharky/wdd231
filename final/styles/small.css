@@ -1,9 +1,9 @@
 /*#region Site Wide */
 :root {
   --background: #111111;
-  --headers: #ffffff;
+  --headers: rgb(255, 255, 255);
 
-  --text: #ffffff;
+  --text: rgb(255, 255, 255);
   --text-bg: #2a2a2a;
   --button-background: #242424;
 
@@ -19,7 +19,7 @@
   --card-shadow: 0 1px 3px rgba(255, 255, 255, 0.04), 0 6px 16px rgba(0, 0, 0, 0.85);
 }
 .lightmode {
-  --background: #f5f5f5;
+  --background: rgb(245, 245, 245);
   --headers: #111111;
 
   --text: black;
