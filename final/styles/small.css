@@ -235,7 +235,7 @@ header {
   text-align: center;
   font-size: 3.125rem;
 
-  color: var(--accent1);
+  color: #64b68d;
 }
 
 .page-introduction p {
@@ -246,7 +246,7 @@ header {
 .page-introduction p span {
   font-weight: bold;
 
-  color: var(--accent1);
+  color: #64b68d;
 }
 
 .page-introduction img {
